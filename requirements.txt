@@ -1,0 +1,4 @@
+git+https://github.com/dwgoon/jpegio
+timm==0.1.26
+tensorboard==2.2.0
+pytorch-lightning==0.9.0
