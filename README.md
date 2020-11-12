@@ -24,7 +24,7 @@ DATA-PATH
 
 ## How to use
 ```
-python3 train_lit_model.py --version {experiment name} --gpus {num gpus} --data-path {data path root} --stego-scheme {stego scheme name} --payload {payload}
+python3 train_lit_model.py --version {experiment version} --gpus {num gpus} --data-path {data path root} --stego-scheme {stego scheme name} --payload {payload}
 ```
 
 ## WIP
