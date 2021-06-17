@@ -50,7 +50,7 @@ def abs_bounded_onehot(I,T=5):
     I = np.clip(I, a_min=0,a_max=T)
     I_oh = np.zeros((I.shape)+(T+1,))
     for ch in range(I.shape[-1]):
-        I_oh[:,:,ch,:] = (I == range(T+1))
+        I_oh[:,:,ch,:] = (I[:,:,ch,np.newaxis] == range(T+1))
     return I_oh.reshape((I.shape[0],I.shape[1], -1))
 
 class TrainRetrieverPaired(Dataset):
